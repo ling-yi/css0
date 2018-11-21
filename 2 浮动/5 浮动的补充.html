@@ -1,0 +1,37 @@
+<!--浮动的子元素的宽度和大于不浮动的父元素的宽度，某些浮动的子元素将会掉下来-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0px;
+				margin: 0px;
+			}
+			div{
+				width: 400px;
+				height: 400px;
+				background-color: pink;
+			}
+			.para1{
+				float: left;
+				width: 500px;/*width: 100px;*/
+				height: 300px;
+				background-color: blue;
+			}
+			.para2{
+				float: left;
+				width: 350px;
+				height: 300px;
+				background-color: green;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<p class="para1">1</p>
+			<p class="para2">2</p>
+		</div>
+	</body>
+</html>

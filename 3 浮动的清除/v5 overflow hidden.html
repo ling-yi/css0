@@ -1,0 +1,38 @@
+<!--'overflow:hidden'的本意：隐藏掉所有溢出盒子的内容。-->
+<!--浏览器的偏方：一个父亲加上'overflow:hidden'，就能被浮动的儿子撑出高度，而且能够让margin生效-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			li{
+				float: left;
+				width: 100px;
+				height: 30px;
+				background-color: pink;
+			}
+			.box1,.box2{
+				overflow: hidden;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1">
+			<ul>
+				<li>生命壹号1</li>
+				<li>生命壹号2</li>
+				<li>生命壹号3</li>
+				<li>生命壹号4</li>
+			</ul>
+		</div>
+		<div class="box2">
+			<ul>
+				<li>哈哈1</li>
+				<li>哈哈2</li>
+				<li>哈哈3</li>
+				<li>哈哈4</li>
+			</ul>
+		</div>
+	</body>
+</html>

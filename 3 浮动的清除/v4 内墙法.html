@@ -1,0 +1,30 @@
+<!--一个父亲是不能被浮动的儿子撑出高度-->
+<!--在浮动的元素下面修一堵墙：设置了'clear:both'的div，父亲就能被儿子撑出高度（此时父亲能自适应高度）-->
+<!--与外墙法相比，内墙法的优势（本质区别）在于：内墙法可以给它所在的家撑出宽度（让box1有高）。-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				background-color: green;
+			}
+			p{
+				float: left;
+				width: 100px;
+				height: 100px;
+				background-color: red;
+			}
+			.cl{
+				clear: both;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<p></p>
+			<div class="cl"></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,44 @@
+<!--1 absolute定位的元素的位置相对于最近的已定位的祖先元素
+2 absolute定位的元素可以覆盖页面的其他元素
+3 absolute是相对于最近祖先非static定位来定位的-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Absolute定位</title>
+		<style type="text/css">
+			.container{
+				height: 200px;
+				width: 200px;
+				border: 1px solid black;
+				/*position: relative;*/
+			}
+			.box1{
+				height: 50px;
+				width: 50px;
+				background-color: red;
+			}
+			.box2{
+				height: 50px;
+				width: 50px;
+				background-color: blue;
+				position: absolute;
+				top: 20px;
+				left: 30px;
+			}
+			.box3{
+				height: 50px;
+				width: 50px;
+				background-color: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="box1"></div>
+			<div class="box2"></div>
+			<div class="box3"></div>
+		</div>
+		
+	</body>
+</html>

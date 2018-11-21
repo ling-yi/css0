@@ -1,0 +1,48 @@
+<!--1 fixed定位相对于屏幕视窗的位置来制定元素的空间
+2 fixed定位的元素在屏幕滚动时不会发生变化-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>fixed定位</title>
+		<style type="text/css">
+			.div0{
+				height: 1000px;
+				background: red;
+			}
+			.div1{
+				width: 100%;
+				height: 100px;
+				background: #111;
+				position: fixed;
+				top: 0;
+				left: 0;
+				color: #fff;
+			}
+			.div2{
+				width: 100px;
+				height: 100px;
+				background: #111;
+				position: fixed;
+				top: 50%;
+				right: 0;
+				color: #fff;
+			}
+			.div3{
+				width: 100%;
+				height: 100px;
+				background: #111;
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div0"></div>
+		<div class="div1">固定上部导航</div>
+		<div class="div2"><a href="#" style="color:#fff">回到顶部</a></div>
+		<div class="div3">固定下方导航</div>
+	</body>
+</html>

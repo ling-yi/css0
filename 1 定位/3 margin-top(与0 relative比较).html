@@ -1,0 +1,21 @@
+<!--position:relative和负margin都可以使元素位置发生偏移，（都不会脱离文档流）二者的区别表现在：
+	1.负margin会使元素在文档流中的位置发生偏移，它会放弃偏移之前占据的空间，紧挨其后的元素会填充这部分空间；
+	2.相对定位后元素位置发生偏移，它仍会坚守原来占据的空间，不会让文档流的其他元素流入。-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{width: 100px; height: 100px;}
+			.div1{background: red;}
+			.div2{background: blue; margin-top: 30px;}
+			.div3{background: yellow;}
+		</style>
+	</head>
+	<body>
+		<div class="div1"></div>
+		<div class="div2"></div>
+		<div class="div3"></div>
+	</body>
+</html>

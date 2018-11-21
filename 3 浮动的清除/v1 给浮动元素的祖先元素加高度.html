@@ -1,0 +1,42 @@
+<!--如果一个元素需要浮动，那么它的祖先元素一定要有高度。有高度的盒子，才能关住浮动。-->
+<!--只要浮动在一个有高度（高度大于等于‘浮动’高度）的盒子中，那么这个浮动就不会影响后面的浮动元素-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			div{
+				/*高度小于孩子(浮动元素)的高度,会出现不正常的现象*/
+				/*height: 10px;*/
+				
+				/*设置一个正确的高度(至少保证不比"浮动"的儿子的高度小)*/
+				height: 30px;
+			}
+			li{
+				float: left;
+				width: 100px;
+				height: 30px;
+				background-color: pink;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<ul>
+				<li>生命壹号1</li>
+				<li>生命壹号2</li>
+				<li>生命壹号3</li>
+				<li>生命壹号4</li>
+			</ul>
+		</div>
+		<div>
+			<ul>
+				<li>哈哈1</li>
+				<li>哈哈2</li>
+				<li>哈哈3</li>
+				<li>哈哈4</li>
+			</ul>
+		</div>
+	</body>
+</html>

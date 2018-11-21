@@ -1,0 +1,45 @@
+<!--外墙法：
+1 用设置了"clear:both;"的div隔开先前包含浮动元素的两个div，可以避免两个div中浮动元素之间的影响
+2 可以在设置了"clear:both;"的div中设置height，达到相邻元素的margin属性的效果-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			li{
+				float: left;
+				width: 100px;
+				height: 30px;
+				background-color: pink;
+			}
+			.cl{
+				clear: both;
+			}
+			.h16{
+				height: 0px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<ul>
+				<li>生命壹号1</li>
+				<li>生命壹号2</li>
+				<li>生命壹号3</li>
+				<li>生命壹号4</li>
+			</ul>
+		</div>
+		<div class="cl h16">
+			
+		</div>
+		<div>
+			<ul>
+				<li>哈哈1</li>
+				<li>哈哈2</li>
+				<li>哈哈3</li>
+				<li>哈哈4</li>
+			</ul>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,39 @@
+<!--
+	1 可以通过display属性将块级元素和行内元素进行相互转换，display即“显示模式”
+	2 inline就是“行内”
+	3 block就是“块”
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				display: inline;
+				background-color: pink;
+				width: 500px;
+				height: 80px;
+			}
+			h1{
+				display: inline;
+				background-color: red;
+				width: 500px;
+				height: 80px;
+			}
+			span{
+				display: block;
+				background-color: pink;
+				width: 500px;
+				height: 80px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>我是div 1</div>
+		<div>我是div 1</div>
+		<h1>我是大标题</h1>
+		<span>我是span 1</span>
+		<span>我是span 2</span>
+	</body>
+</html>
